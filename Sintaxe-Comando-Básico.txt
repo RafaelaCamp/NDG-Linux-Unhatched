@@ -1,0 +1,60 @@
+Os desktops Linux usam uma Interface Gráfica (GUI), mas também possui uma ferramenta mais eficiente para realizar as mesmas ações que uma GUI, a interface de linha de comando (CLI).
+
+# Sintaxe de Comando Básico
+A maioria dos comandos segue um padrão simples de sintaxe:
+
+comando [opcoes…] [argumentos…]
+
+Em outras palavras, você digita um comando, seguido de quaisquer opções e/ou argumentos antes de pressionar a tecla Enter. Normalmente, as opções alteram o comportamento do comando e os argumentos são itens ou valores para o comando agir. Embora existam alguns comandos no Linux que não são inteiramente consistentes com essa sintaxe, a maioria dos comandos usam essa sintaxe ou algo semelhante.
+
+Quando o comando ls é executado sem opções ou argumentos seu comportamento padrão é retornar uma lista de arquivos contidos no diretório atual.
+
+# Argumentos
+Um argumento pode ser usado para especificar algo para o comando agir. O comando ls pode ser dado o nome de um diretório como um argumento, e ele irá listar o conteúdo desse diretório.
+
+Ex.: 
+sysadmin@localhost:~$ ls Documents
+School           alpha-second.txt  food.txt     linux.txt     os.csv
+Work             alpha-third.txt   hello.sh     longfile.txt  people.csv
+adjectives.txt   alpha.txt         hidden.txt   newhome.txt   profile.txt
+alpha-first.txt  animals.txt       letters.txt  numbers.txt   red.txt
+
+A saída resultante é uma lista de arquivos contidos no diretório Documents.
+
+# Opções
+Podem ser usadas para alterar o comportamento de um comando. Ateriormente, o comando ls foi usado para listar o conteúdo de um diretório. No exemplo a seguir, a opção -l é fornecida ao comando ls, o que resulta em uma saída de “exibição longa”, o que significa que a saída fornece mais informações sobre cada um dos arquivos listados:
+
+sysadmin@localhost:~$ ls -l
+total 32
+drwx------ 2 sysadmin sysadmin 4096 Dec 20  2017 Desktop                        
+drwx------ 4 sysadmin sysadmin 4096 Dec 20  2017 Documents                      
+drwx------ 2 sysadmin sysadmin 4096 Dec 20  2017 Downloads                      
+drwx------ 2 sysadmin sysadmin 4096 Dec 20  2017 Music                          
+drwx------ 2 sysadmin sysadmin 4096 Dec 20  2017 Pictures                       
+drwx------ 2 sysadmin sysadmin 4096 Dec 20  2017 Public                         
+drwx------ 2 sysadmin sysadmin 4096 Dec 20  2017 Templates                      
+drwx------ 2 sysadmin sysadmin 4096 Dec 20  2017 Videos
+
+	Obs.: Muitas vezes, o caractere é escolhido para ser mnemônico para o seu propósito, como escolher a letra l para longo ou r para reverso. Por padrão, o 	comando ls imprime os resultados em ordem alfabética, portanto, adicionar a opção -r irá imprimir os resultados em ordem alfabética inversa.
+
+Várias opções podem ser usadas de uma só vez, quer dadas como opções separadas como em -l -r ou combinadas como -lr. O resultado de todos esses exemplos seria o mesmo:
+
+ls -l -r
+ls -rl
+ls -lr
+
+Ex.:
+sysadmin@localhost:~$ aptitude moo
+There are no Easter Eggs in this program.
+
+	É possível alterar o comportamento deste comando usando opções. Veja o que acontece quando a opção -v (verbosa) é adicionada:
+
+sysadmin@localhost:~$ aptitude -v moo
+There really are no Easter Eggs in this program.
+
+	Ao combinar várias opções -v, podemos obter uma variedade de respostas:
+
+sysadmin@localhost:~$ aptitude -vv moo
+Didn't I already tell you that there are no Easter Eggs in this program?
+sysadmin@localhost:~$ aptitude -vvv moo
+Stop it!
