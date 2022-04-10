@@ -1,0 +1,13 @@
+ACESSO ADMINISTRATIVO
+
+
+# Comando su
+
+su OPÇÕES NOME_DO_USUÁRIO
+
+O comando su permite que você atue temporariamente como um usuário diferente. Ele faz isso criando um novo shell. O shell é simplesmente um console de entrada de texto que permite digitar comandos. Por padrão, se uma conta de usuário não for especificada, o comando su abrirá um novo shell como usuário root, que fornece privilégios administrativos.
+
+su -
+su -l
+su --login
+
