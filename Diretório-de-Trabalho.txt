@@ -1,0 +1,32 @@
+# Impressão do Diretório de Trabalho
+
+Para descobrir onde você está atualmente localizado dentro do sistema de arquivos, o comando pwd pode ser usado. O comando pwd imprime o diretório de trabalho, sua localização atual dentro do sistema de arquivos:
+
+pwd [OPÇÕES]
+
+sysadmin@localhost:~$ pwd
+/home/sysadmin
+
+# Alterando Diretório
+
+Para navegar pela estrutura do sistema de arquivos, use o comando cd (change directory) para alterar diretórios.
+
+cd [opções] [caminho]
+
+o diretório Documents está localizado dentro do diretório home, onde você se encontra atualmente. Para mover para o diretório Documents, use-o como argumento para o comando cd:
+
+sysadmin@localhost:~$ cd Documents                                              
+sysadmin@localhost:~/Documents$ 
+
+o diretório root (raiz) e é representado pelo caractere /. Para mover para o diretório root, use o caractere / como argumento para o comando cd.
+
+sysadmin@localhost:~/Documents$ cd /
+sysadmin@localhost:/$
+
+# Caminhos Absolutos
+
+O caminho começa no diretório root /, se move para o diretório home e, em seguida, para o diretório sysadmin.
+
+# Caminhos Relativos
+
+Um caminho relativo fornece direções para um arquivo relativo à sua localização atual no sistema de arquivos. Os caminhos relativos não começam com o caractere /, eles começam com o nome de um diretório.
