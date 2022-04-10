@@ -30,3 +30,17 @@ O caminho começa no diretório root /, se move para o diretório home e, em seg
 # Caminhos Relativos
 
 Um caminho relativo fornece direções para um arquivo relativo à sua localização atual no sistema de arquivos. Os caminhos relativos não começam com o caractere /, eles começam com o nome de um diretório.
+
+Use o caractere / para separar os nomes dos diretórios e o resultado School/Art é um caminho relativo do diretório Documents para o diretório Art:
+	
+	Documents -> school -> Art
+
+Use o caminho relativo como um argumento para o comando cd para mover para o diretório Art.
+
+sysadmin@localhost:~/Documents/$ cd School/Art
+sysadmin@localhost:~/Documents/School/Art$
+
+Use o comando pwd para confirmar a alteração:
+
+sysadmin@localhost:~/Documents/School/Art$ pwd                                      
+/home/sysadmin/Documents/School/Art
