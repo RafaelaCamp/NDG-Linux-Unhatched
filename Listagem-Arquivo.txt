@@ -93,3 +93,11 @@ Isso indica a hora em que o conteúdo do arquivo foi modificado pela última vez
 
 O campo final contém o nome do arquivo ou diretório.
 
+
+
+# ORGANIZAÇÃO
+
+ls saída é organizada alfabeticamente pelo nome do arquivo
+-t irá classificar os arquivos por registro de data/hora
+-S ordenará os arquivos por tamanho de arquivo
+-r reverterá a ordem de qualquer tipo de classificação. 
