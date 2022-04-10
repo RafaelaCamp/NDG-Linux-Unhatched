@@ -1,0 +1,19 @@
+Caracteres ..
+
+Independentemente do diretório em que você esteja, os caracteres .. sempre representa um diretório maior em relação ao diretório atual, às vezes referido como o diretório pai. Para mover do diretório Art de volta para o diretório School:
+
+sysadmin@localhost:~/Documents/School/Art$ cd ..                                
+sysadmin@localhost:~/Documents/School$
+
+
+Caractere .
+
+Independentemente do diretório em que você esteja, o caractere . sempre representa seu diretório atual. Para o cd este atalho não é muito útil, mas será útil para comandos cobertos nas seções subsequentes.
+
+
+caractere ~
+
+O diretório home do usuário atual é representado pelo caractere ~. Como mencionado acima, você sempre começa como o usuário sysadmin, cuja home está localizada em /home/sysadmin. Para retornar ao seu diretório home a qualquer momento, execute o seguinte comando:
+
+sysadmin@localhost:~/Documents/School$ cd ~
+sysadmin@localhost:~$
